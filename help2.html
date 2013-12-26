@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<title>Help Page</title>
+		
+		<!-- TMG stuff -->
+		<link rel="stylesheet" type="text/css" href="CSS/tmgGen.css" />
+		<link rel="stylesheet" type="text/css" href="CSS/help.css" />
+		
+		<link rel="stylesheet" href="CSS/visibleIf.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="CSS/help2.css" type="text/css" media="all" />
+		
+		<script type="text/javascript" src="js/EventHelpers.js"></script>
+		<script type="text/javascript" src="js/visibleIf.js"></script>
+		
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	
+	</head>
+	
+	<body>
+	
+		<div id="container">
+		
+			<div id="headContainer">
+			
+				<div id="signContainer">
+					<div id="sign"></div>
+				</div> <!-- The close for signContainer -->
+				
+				<div id="navBarContainer">
+					<div id="navBar">
+						<div id="centerNavbar">
+							<a href="/index.html" title="Homepage"> <span class="TheMacGuys"> </span> </a> <!-- close for TheMacGuys -->
+							<a href="/findUS.html" title="Find Us"> <span class="findUs"> </span> </a>  <!-- close for findUs -->
+							<a href="/products.html" title="Products"> <span class="products"> </span> </a> <!-- close for products -->
+							<a href="/service.html" title="Services"> <span class="service"> </span> </a> <!-- close for service -->
+						  	<a href="/training.html" title="Training"> <span class="training"> </span> </a> <!-- close for training -->
+						  	<a href="/tradeUp.html" title="Trade Up"> <span class="tradeUp"> </span> </a> <!-- close for tradeUp -->
+						  	<a href="/help2.html" title="Need Help?"> <span class="help"> </span> </a> <!-- close for help -->
+						</div> <!-- The close for centerNavBar -->
+					</div> <!-- The close for navBar -->
+				</div> <!-- The close for navBarContainer -->
+				
+			</div> <!-- The close for headContainer -->
+			
+			<div id="midContainer">
+			
+				<div id="banner"> <img src="/images/help/needHelp.png" alt="Big Boat"> </div>
+				<div id="tree"> </div>
+			
+				<div id="helpRequest">
+				
+					<div id="leftSide">
+		
+						<form class="visibleIf-disableIfInvisible">
+							
+								<p id="question">What can we help with today?</p>
+								<table class="formTable">
+									<tr>
+										<td>
+											<select id="inquiryType" name="inquiryType">
+												<option value="selectOne">Select One ...</option>
+												<option value="callBack">Call Back</option>
+												<option value="repairRequest">In Store Repair Request</option>
+												<option value="onsiteRequest">Onsite Support Request</option>
+												<option value="delivery">Delivery & Equipment Setup</option>
+												<option value="remote">Remote Support</option>
+												<option value="One2One">One 2 One Training</option>
+												<option value="onsiteSem">Onsite Seminars</option>
+												<option value="teamWorkshops">Team Workshops</option>
+												<option value="laborRates">Standard Labor Rates</option>
+												<option value="other">Other</option>
+											</select>
+										</td>
+									</tr>
+									
+									<tr class="visibleIf" data-visibleif-rule="inquiryType=='selectOne'">
+										<td>
+											<p>Please select what kind of service you are looking for from the above menu.</p>
+										</td>
+									</tr>
+									
+									<tr class="visibleIf" data-visibleif-rule="inquiryType=='callBack'">
+										<td>
+											<p>Thank you for contacting The Mac Guys.  We will make every effort to return your call with in two business hours.  Rest assured, your inquiry is a priority to us.  You'll hear back from us as soon as we are able.</p>
+											<p>If the problem is a relatively easy one to resolve we should be able to assist you with it over the phone, otherwise we will happily schedule an appointment using one of our other support options.</p>
+										</td>
+									</tr>
+									
+									<tr class="visibleIf" data-visibleif-rule="inquiryType=='repairRequest'">
+										<td>
+											<p>Thank you for contacting The Mac Guys.  We will make every attempt to get back to you within 2 business hours*.  At that time we would be happy to schedule a time for you to drop your machine off for service.  The typical timeframe it takes for a machine to make it through our queue is between 2 to 4 days.  Once your appointment is scheduled you will have effectively held your place in the queue system.</p><br>
+											<p>* Efforts are made for warranty related repairs to be addressed sooner, service load permitting.</p>
+											<p>Please see "Standard Labor Rates" for addition fee information.</p>
+										</td>
+									</tr>
+									
+									<tr class="visibleIf" data-visibleif-rule="inquiryType=='onsiteRequest'">
+										
+										<td>
+											<p>Thank you for contacting us.  The Mac Guys will gladly come to you to resolve any of the computer issues you might be experiencing.  We schedule onsite appointments in much the same way as we handle in-store ones, using a queue system.  This generally means that your appointment will be scheduled around 3 business days from today.</p>
+											<p>Our normal hourly rates apply to onsite appointments.  This hourly rate is $125 per hour and includes time spent from door to door.</p>
+											<p>Please see "Standard Labor Rates" for addition fee information.</p>
+										</td>
+									</tr>
+									
+									<tr class="visibleIf" data-visibleif-rule="inquiryType=='delivery'">
+										
+										<td>
+											<p>Thank you for contacting The Mac Guys.</p>
+											<p>The Mac Guys has an experienced staff that can help you with any of your setup needs.  Send us a message today, place an order, and we'll be happy to get an appointment scheduled to come and get all your computer equipment up and running. </p>
+											<p>Please see "Standard Labor Rates" for addition fee information.</p>
+										</td>
+									</tr>
+									
+									<tr class="visibleIf" data-visibleif-rule="inquiryType=='remote'">
+										
+										<td>
+											<p>Thank you for contacting The Mac Guys</p>
+											<p>In addition to in-store and onsite appointments The Mac Guys also offers remote support options, that include, but are not limited to, remotely connecting to your computer and aiding you with your problem over the internet*.  This options has the benefit of not requiring that you bring your machine to us, and additionally, since we won't have to come to you, will cost less.
+											<p>* Not all issues can be resolved using this method.</p>
+											<p>Please see "Standard Labor Rates" for addition fee information.</p>
+										</td>
+									</tr>
+									
+									<tr class="visibleIf" data-visibleif-rule="inquiryType=='laborRates'">
+										
+										<td>
+											<p>• In-Store / Onsite Rate: $125</p>
+											<p>• Backup Fee: $125</p>
+											<p>• Data Recovery Rate: $125</p>
+											<p>• Expedited Service Rate: $175</p>
+											<p>• Expedite Warranty Rate: $50</p>
+											<p>• Diagnostic Bench Fee: $75</p>
+											<p>• Side-by-Side Fee: $30</p>
+											<p>• Basic Install Fee: $50</p>
+										</td>
+									</tr>
+									
+									<tr class="visibleIf" data-visibleif-rule="inquiryType=='One2One'">
+										
+										<td>
+											<p>Thank you for contacting The Mac Guys</p>
+											<p>If a classroom learning environment isn't right for you we offer One 2 One training sessions that are tailored specifically for you and your needs.  If this option suits you contact us and we'll be happy to get back to you and schedule a get together.</p>
+											<p>Please see "Standard Labor Rates" for addition fee information.</p>
+										</td>
+									</tr>
+									
+									<tr class="visibleIf" data-visibleif-rule="inquiryType=='onsiteSem'">
+										
+										<td>
+											<p>Thank you for contacting The Mac Guys</p>
+											<p>The Mac Guys is thoroughly equipped to handle your next technology seminar, with speakers that can relate on all levels of end user skill and admin staff alike.  Contact us today and we'll get something scheduled for you.</p>
+											<p>Please see "Standard Labor Rates" for addition fee information.</p>
+										</td>
+									</tr>
+									
+									<tr class="visibleIf" data-visibleif-rule="inquiryType=='teamWorkshops'">
+										
+										<td>
+											<p>Thank you for contacting The Mac Guys</p>
+											<p>If a seminar type event is what you're looking for but you'd rather receive more hands on activity then a Team Workshop is what you're looking for.  Contact us today and we'll get something scheduled for you.</p>
+											<p>Please see "Standard Labor Rates" for addition fee information.</p>
+										</td>
+									</tr>
+									
+									<tr class="visibleIf" data-visibleif-rule="inquiryType=='other'">
+										
+										<td>
+											<p>Thank you for contacting The Mac Guys</p>
+											<p>While The above outlines what The Mac Guys engages in most often due to our experience and knowledge base we more than willing and able to venture beyond these borders.  Send us a message and we'll be happy to get back to you, and discuss things further.
+										</td>
+									</tr>
+								</table>
+						</form>
+					</div>
+					
+					<div id="rightSide">
+						<p id="formHeader">Please tell us a bit...</p>
+						<form id="helpForm" action="php/send_mail.php" method="post">
+							<table>
+								<tr>
+									<td>Name:</td>
+									<td>
+										<input type="text" name="name" value="" maxlength="100" placeholder="Jane Doe" required />
+									</td>
+								</tr>
+								<tr>
+									<td>Phone:</td>
+									<td>
+										<input type="tel" name="phone" value="" maxlength="14" placeholder="555-555-5555" required />
+									</td>
+								</tr>
+								<tr>
+									<td>Email:</td>
+									<td>
+										<input type="email" name="email_address" value="" maxlength="100" placeholder="jane.doe@gmail.com" required />
+									</td>
+								</tr>
+								<tr>
+									<td>Scoop:</td>
+									<td>
+										<textarea rows="10" cols="50" name="summary" placeholder="Please tell us what you have and what you're stuggling with." required ></textarea>
+									</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td>
+										<button class="submit" type="submit">Submit Form</button>
+									</td>
+								</tr>
+							</table>
+						</form>
+					</div>
+				</div>
+			</div> <!-- The close for midContainer -->
+
+			<div id="foot">
+		
+			<div id="contactContainer">
+				<div id="logo"></div>
+				<div id="contactInfo">
+					<p>40 Copeland Avenue</p>
+					<p>Suite 111</p>
+					<p>La Crosse, WI 54603</p>
+				</div>
+			</div> <!-- The close for contactContainer -->
+	
+		</div> <!-- The close for the foot -->
+			
+		</div> <!-- The close for container -->
+	</body>
+</html>

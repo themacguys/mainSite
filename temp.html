@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<title>Help Page</title>
+		
+		<link rel="stylesheet" href="CSS/visibleIf.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="CSS/temp.css" type="text/css" media="all" />
+		<link rel="stylesheet" type="text/css" href="CSS/help.css" />
+		
+		<script type="text/javascript" src="js/EventHelpers.js"></script>
+		<script type="text/javascript" src="js/visibleIf.js"></script>
+	
+	</head>
+	
+	<body>
+	
+		<div id="helpRequest">
+	
+			<form class="visibleIf-disableIfInvisible">
+				
+					<p id="question">What can we help with today?</p>
+					<table class="formTable">
+						<tr>
+							<td>
+								<select id="inquiryType" name="inquiryType">
+									<option value="selectOne">Select One ...</option>
+									<option value="callBack">Call Back</option>
+									<option value="repairRequest">In Store Repair Request</option>
+									<option value="onsiteRequest">Onsite Support Request</option>
+									<option value="delivery">Delivery & Equipment Setup</option>
+									<option value="remote">Remote Support</option>
+									<option value="other">Other</option>
+								</select>
+							</td>
+						</tr>
+						
+						<tr class="visibleIf" data-visibleif-rule="inquiryType=='selectOne'">
+							<td>
+								<p>Please select what kind of service you are looking for from the above menu.</p>
+							</td>
+						</tr>
+						
+						<tr class="visibleIf" data-visibleif-rule="inquiryType=='callBack'">
+							<td>
+								<p>Thank you for contacting The Mac Guys.  We will make every effort to return your call with in two hours (During business hours).  Rest assured, your inquiry is a priority to us.  You'll hear back from us as soon as we are able.</p>
+								<p>If your problem is an easy one we should be able to assist you with it over the phone, otherwise we will happily schedule an appointment using one of the other options from the pop-up menu.</p>
+							</td>
+						</tr>
+						
+						<tr class="visibleIf" data-visibleif-rule="inquiryType=='repairRequest'">
+							<td>
+								<p>Thank you for contacting The Mac Guys.  We will make every attempt to get back to you within 2 hours (During business hours).  At that time we would be happy to schedule a time for you to drop your machine off for service.  The typical amount it takes for a machine to make it through the queue is between 2 to 4 days.  Once your appointment is scheduled you will have effectively held your place in the queue system.</p><br>
+								<p>Efforts are made for warranty related repairs to be addressed sooner, service load permitting.</p>
+							</td>
+						</tr>
+						
+						<tr class="visibleIf" data-visibleif-rule="inquiryType=='onsiteRequest'">
+							
+							<td>
+								<p>This is what displays when the user selects to make an appointment for an on-site support appointment.</p>
+								<p>This is what displays when the user selects to make an appointment for an on-site support appointment.</p>
+								<p>This is what displays when the user selects to make an appointment for an on-site support appointment.</p>
+								<p>This is what displays when the user selects to make an appointment for an on-site support appointment.</p>
+							</td>
+						</tr>
+						
+						<tr class="visibleIf" data-visibleif-rule="inquiryType=='delivery'">
+							
+							<td>
+								<p>This is what displays when the user selects to make an appointment for a delivery appointment.</p>
+								<p>This is what displays when the user selects to make an appointment for a delivery appointment.</p>
+								<p>This is what displays when the user selects to make an appointment for a delivery appointment.</p>
+								<p>This is what displays when the user selects to make an appointment for a delivery appointment.</p>
+							</td>
+						</tr>
+						
+						<tr class="visibleIf" data-visibleif-rule="inquiryType=='remote'">
+							
+							<td>
+								<p>This is what displays when the user selects to make an appointment for a remote support appointment.</p>
+								<p>This is what displays when the user selects to make an appointment for a remote support appointment.</p>
+								<p>This is what displays when the user selects to make an appointment for a remote support appointment.</p>
+								<p>This is what displays when the user selects to make an appointment for a remote support appointment.</p>
+							</td>
+						</tr>
+						
+						<tr class="visibleIf" data-visibleif-rule="inquiryType=='other'">
+							
+							<td>
+								<p>This is what displays when the user selects to make an appointment for a delivery appointment.</p>
+								<p>This is what displays when the user selects to make an appointment for a delivery appointment.</p>
+								<p>This is what displays when the user selects to make an appointment for a delivery appointment.</p>
+								<p>This is what displays when the user selects to make an appointment for a delivery appointment.</p>
+							</td>
+						</tr>
+					</table>
+			</form>
+			
+			<p id="formHeader">Please tell us a bit...</p>
+			<form id="helpForm" action="php/send_mail.php" method="post">
+				<table>
+					<tr>
+						<td>Name:</td>
+						<td>
+							<input type="text" name="name" value="" maxlength="100" placeholder="Jane Doe" required />
+						</td>
+					</tr>
+					<tr>
+						<td>Phone:</td>
+						<td>
+							<input type="tel" name="phone" value="" maxlength="14" placeholder="555-555-5555" required />
+						</td>
+					</tr>
+					<tr>
+						<td>Email:</td>
+						<td>
+							<input type="email" name="email_address" value="" maxlength="100" placeholder="jane.doe@gmail.com" required />
+						</td>
+					</tr>
+					<tr>
+						<td>Summary:</td>
+						<td>
+							<textarea rows="10" cols="50" name="summary" placeholder="Please tell us what you have and what you're stuggling with." required ></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>
+							<button class="submit" type="submit">Submit Form</button>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

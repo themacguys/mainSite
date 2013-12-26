@@ -1,0 +1,26 @@
+/* CSS Document */
+
+* {margin: 0;
+	padding: 0;}
+	
+html {height: 600px;}
+
+#container {height: 400px;}
+
+#foot {position: relative; top: 0px;}
+	
+#midContainer {position: relative; top: 250px;
+	width: 650px; margin-left: auto;
+	margin-right: auto;}
+	
+#message {font-family: arial;}
+	
+#message h1 {font-size: 48px;}
+
+#message p {font-size: 24px;}
+
+#message2 {font-family: arial;}
+	
+#message2 h1 {font-size: 36px;}
+
+#message2 p {font-size: 22px;}

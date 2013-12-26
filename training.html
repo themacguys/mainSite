@@ -1,0 +1,186 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="description" content="The Mac Guys">
+	<meta name="author" content="SitePoint">
+  
+	<!-- TMG stuff -->
+	<link rel="stylesheet" type="text/css" href="CSS/tmgGen.css" />
+	<link rel="stylesheet" type="text/css" href="CSS/service-training.css" />
+  
+	<!-- <link rel="shortcut icon" href="demos/images/favicon.ico" type="image/x-icon"> -->
+	<!-- <link rel="apple-touch-icon" href="demos/images/apple-touch-icon.png"> -->
+
+	<!-- jQuery (required) -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+  
+	<!-- Anything Slider -->
+	<link rel="stylesheet" href="CSS/anythingslider.css">
+	<script src="js/jquery.anythingslider.js"></script>
+  
+	<!-- AnythingSlider optional extensions -->
+	<!-- <script src="js/jquery.anythingslider.fx.js"></script> -->
+	<!-- <script src="js/jquery.anythingslider.video.js"></script> -->
+  
+  <title>Training</title>
+  
+  <!--[if lt IE 9]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+  <!-- AnythingSlider initialization -->
+	<script type="text/javascript">
+		jQuery(function(){
+			jQuery('#content').anythingSlider({
+				mode			: "fade",
+				startStopped    : false, // If autoPlay is on, this can force it to start stopped
+				buildStartStop	: false,
+				hashTags        : false,
+				autoPlay            : true,
+				buildNavigation     : false,
+				toggleArrows    : false,
+				buildArrows     : false,
+				enablePlay      : false,      // if false, the play/stop button will still be visible, but not clickable.
+				autoPlayLocked  : true,  // If true, user changing slides will not stop the slideshow
+				resumeDelay     : 4000, // Resume slideshow after user interaction, only if autoplayLocked is true (in milliseconds).
+				easing          : "swing",   // Anything other than "linear" or "swing" requires the easing plugin
+				delay           : 4500,      // How long between slideshow transitions in AutoPlay mode (in milliseconds)
+				animationTime   : 1000,       // How long the slideshow transition takes (in milliseconds)
+				onSlideComplete : function(slider){
+					// alert('Welcome to Slide #' + slider.currentPage);
+				}
+			});
+			$('#bannerNav a').mouseover(function(){
+				var slide = $(this).attr('data-slide').substring(1);
+				$('#content').anythingSlider(slide);
+				return false;
+			});
+		});
+	</script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var baseMargin = 0;
+	
+			$('#help_Button').hover(function() {
+				$(this).stop().animate({right: (baseMargin+0)+'px'}, 500);
+			},
+			function() {
+				$(this).stop().animate({right: (baseMargin-130)+'px'}, 500);                 
+			});
+		});
+	</script>
+  
+</head>
+
+<body>
+
+	<div id="container">
+	
+		<div id="headContainer">
+		
+			<div id="signContainer">
+				<div id="sign"></div>
+			</div> <!-- The close for signContainer -->
+			
+			<div id="navBarContainer">
+				<div id="navBar">
+					<div id="centerNavbar">
+						<a href="/index.html" title="Homepage"> <span class="TheMacGuys"> </span> </a> <!-- close for TheMacGuys -->
+						<a href="/findUS.html" title="Find Us"> <span class="findUs"> </span> </a>  <!-- close for findUs -->
+						<a href="/products.html" title="Products"> <span class="products"> </span> </a> <!-- close for products -->
+						<a href="/service.html" title="Services"> <span class="service"> </span> </a> <!-- close for service -->
+					  	<a href="/training.html" title="Training"> <span class="training"> </span> </a> <!-- close for training -->
+					  	<a href="/tradeUp.html" title="Trade Up"> <span class="tradeUp"> </span> </a> <!-- close for tradeUp -->
+					  	<a href="/help2.html" title="Need Help?"> <span class="help"> </span> </a> <!-- close for help -->
+					</div> <!-- The close for centerNavBar -->
+				</div> <!-- The close for navBar -->
+			</div> <!-- The close for navBarContainer -->
+			
+		</div> <!-- The close for headContainer -->
+		
+		<div id="midContainer">
+			
+			<div id="slider">
+				<ul id="content">
+					<li> <img src="/images/training/class.jpg" alt="We Offering Many Mac and iOS Classes"> </li>
+					<li> <img src="/images/training/One2One.jpg" alt="We Can Help You Individually Too"> </li>
+					<li> <img src="/images/training/onsites.jpg" alt="If You'd Prefer We Can Come to You"> </li>
+					<li> <img src="/images/training/teamWorkshops.jpg" alt="We Also Offer Hands On Workshops."> </li>
+				</ul>
+				<div id="shadow">
+				</div>
+			</div>
+			
+			<div id="bannerNav">
+				<a data-slide="#1" href="#1"> <div id="bannerButton1"></div> </a>
+				<a id="#1" data-slide="#1" href="#bannerButton4"> <div id="bannerButton2"></div> </a>
+				<a id="#2" data-slide="#2" href="#position2"> <div id="bannerButton3"></div> </a>
+				<a id="#3" data-slide="#3" href="#position3"> <div id="bannerButton4"></div> </a>
+				<a id="#4" data-slide="#4" href="#row4"> <div id="bannerButton5"></div> </a>
+			</div>
+			
+			<div id="infoContainer">
+				<div id="row1">
+					<div class="leftText">
+						<h2>Classes</h2>
+						<p>The Mac Guys holds group training classes several times a month. We offer both introductory and intermediate classes for both Mac and iPad at very reasonable rates. <br><br> When you purchase your Mac or iPad here at The Mac Guys you receive complementary admission to ONE FREE class of your choice. <br><br> <a id="classLink" href="http://www.eventzilla.net/user/themacguys" title="Click to grab a seat!">Click here to see the list of available classes and get registered today.</a></p>
+					</div>
+					<div class="rightPicture"> <a href="http://www.eventzilla.net/user/themacguys" target="_blank" title="Click to grab a seat!"> <img src="/images/training/classes.jpg" alt="Big Boat"> </a> </div> 
+					<div id="position2"></div>
+				</div>
+				
+				<div id="row2">
+					<div class="rightText">
+						<h2>One-on-One Training</h2>
+						<p>Get personalized instruction from one of our knowledgeable and helpful Apple Experts. One-to- One training allows you to get your specific questions answered at the pace you are comfortable with by someone who knows how to explain tech-y things in plain English. Our customers have let us know: our One-on-One training is the most helpful training option that The Mac Guys offers. Yes, it costs a little more, but it’s worth it!</p>
+					</div>
+					<div class="leftPicture"> <img src="/images/training/personalized.jpg" alt="Big Boat"> </div>
+					<div id="position3"></div>
+				</div>
+				<div id="row3">
+					<div class="leftText">
+						<h2>Onsite Seminars</h2>
+						<p>The Mac Guys employs Apple certified technicians. With lineage that goes back to the creation Apple, The Mac Guys has the right 								tools and expertise to get you back up and running fast.</p>
+					</div>
+					<div class="rightPicture"> <img src="/images/training/onsite.jpg" alt="Big Boat"> </div>
+					<div id="position4"></div>
+				</div>
+				<div id="row4">
+					<div class="rightText">
+						<h2>Team Workshops</h2>
+						<p>Would you like to give your team some expert training in how to get the most out of using their Macs, iPads or iPhones? The Mac Guys will work with you to create a workshop for your team that will help them use these tools more effectively. We can host the workshop at our store, or we can come to your location. Increase in productivity guaranteed!</p>
+					</div>
+					<div class="leftPicture"> <img src="/images/training/workshops.jpg" alt="Big Boat"> </div>
+				</div>
+				
+			</div> <!-- The close for serviceInfoContainer -->
+			
+		</div> <!-- The close for midContainer -->
+		
+		<div id="buttonArea">
+			<a href="help2.html" title="Click for Help"> <div id="help_Button"></div> </a>
+		</div>
+		
+		<div id="foot">
+		
+			<div id="contactContainer">
+				<div id="logo"></div>
+				<div id="contactInfo">
+					<p>40 Copeland Avenue</p>
+					<p>Suite 111</p>
+					<p>La Crosse, WI 54603</p>
+				</div>
+			</div> <!-- The close for contactContainer -->
+	
+		</div> <!-- The close for the foot -->
+		  
+	</div> <!-- The close for container -->
+  
+</body>
+
+</html>

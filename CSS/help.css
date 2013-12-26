@@ -1,0 +1,70 @@
+/* CSS Document */
+
+* {margin: 0;
+	padding: 0;}
+	
+html {background-color: #F5F5F5;}
+
+#container {height: 0px;}
+
+#midContainer {position: relative;
+	width: 900px; left: 40px; height: 900px;
+	margin-left: auto; margin-right: auto;}
+
+#banner {width: 900px; height: 150px;
+	position: relative; top: 160px;
+	box-shadow: 0px 0px 2px #888888;
+	z-index: 19;}
+	
+#tree {width: 600px; height: 328px;
+	position: relative; top: -95px;
+	background-image: url("../images/help/help.png");
+	z-index: 20; float: right;
+	background-repeat: no-repeat;}
+	
+#infoContainer {height: 300px; width: 900px;
+	margin-left: auto; margin-right: auto;
+	position: relative; top: -100px;
+	z-index: 15;}
+	
+#attentionGrabber {position: relative; top: -20px;
+	font-family: arial; clear: both;}
+
+#attentionGrabber h2 {width: 550px; padding-bottom: 40px;
+	padding-left: 40px;}
+	
+#attentionGrabber p {padding-left: 40px; padding-right: 40px;}
+
+#serviceForm {position: relative; top: 100px;
+	font-family: arial; width: 900px;
+	margin-left: auto; margin-right: auto;
+	padding-left: 40px;}
+	
+.ss-q-title {font-weight: bold;}
+
+.ss-q-help {margin-left: 20px;}
+
+.ss-choices {padding-top: 10px; padding-left: 50px;}
+
+.ss-section-description {padding-left: 30px;}
+
+.password-warning {padding-top: 20px;}
+
+#foot {position: relative; height: 150px; width: 1000px;
+	margin-left: auto; margin-right: auto; left: 45px;
+	background: rgb(29, 29, 29); top: 0px;
+	border-top-width: 5px;
+    border-top-style: solid;
+    border-top-color: #888888;
+    border-bottom-width: 40px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(221, 221, 221, 1.0);
+    overflow: hidden;}
+    
+@-moz-document url-prefix() { 
+  #foot {
+      top: 300px;;
+  }
+}
+    
+#contactContainer {height: 150px;}

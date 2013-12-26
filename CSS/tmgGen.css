@@ -1,0 +1,205 @@
+/* CSS Document */
+
+* {margin: 0;
+	padding: 0;}
+	
+html {background-color: #F5F5F5;}
+
+html, html a {-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);}
+	
+/* The div that is holding everything else */
+	
+#container {margin-left: -90px;
+	height: 1225px;}
+
+
+/* The Mac Guys Sign at the top of the window */
+	
+#signContainer {position: fixed; left: 0; right: 0;
+	top: -12px; z-index: 100;}
+	
+#sign {margin: auto; background: url("../images/Sign3DWide.png");
+	width: 1130px; height: 87px;}
+	
+	
+/* The area for the navigation links */
+
+#navBarContainer {position: fixed; left: 0; right: 0;
+	z-index: 101; opacity: 0.20;}
+	
+#centerNavbar {margin: auto;
+	width: 1130px; height: 51px;}
+	
+.TheMacGuys {width: 300px; height: 51px;
+	margin-left: 22px; float: left;}
+	
+.findUs {width: 113px; height: 51px;
+	float: left;}
+	
+.products {width: 104px; height: 51px;
+	float: left;}
+	
+.service {width: 90px; height: 51px;
+	float: left;}
+	
+.training {width: 97px; height: 51px;
+	float: left;}
+	
+.tradeUp {width: 106px; height: 51px;
+	float: left;}
+	
+.help {width: 80px; height: 51px;
+	float: left;}
+	
+	
+/* The area of the viewport that contains the slider */
+	
+#slider {position: relative; top: 70px;
+	margin-left: auto; margin-right: auto;}
+
+#content {margin: 0 auto; opacity: 0.90;
+	width: 1000px; height: 450px;}
+	
+	
+/* The Row of buttons beneath the navigation */
+
+#buttonRow {position: relative; top: 97px;
+	left: 45px; height: 190px; width: 1000px;
+	margin-left: auto; margin-right: auto;
+	clear: both;}
+		
+#button1 {width: 240px; height: 190px;
+	position: inherit; float: left;
+	background-image: url("../images/app.jpg");
+	box-shadow: 0px 0px 2px #888888;}
+	
+#button2 {width: 240px; height: 190px;
+	float: left; margin-left: 14px;
+	background-image: url("../images/tradeup.jpg");
+	box-shadow: 0px 0px 2px #888888;}
+	
+#button3 {width: 240px; height: 190px;
+	float: right;
+	border-width: 1px; border-color: gray;
+	background-image: url("../images/helpButton.jpg");
+	box-shadow: 0px 0px 2px #888888;}
+	
+#button4 {width: 240px; height: 190px;
+	float: right; margin-right: 14px;	border-width: 1px; border-color: gray;
+	background-image: url("../images/training.jpg");
+	box-shadow: 0px 0px 2px #888888;}
+	
+	
+/* This section is the about us area */
+
+#whoAreWe {position: relative; width: 983px;
+	margin-left: auto; margin-right: auto;
+	left: 45px; top: 140px; text-align: center;
+	color: gray; font-family: arial; font-size: 24px;}
+	
+	
+/* This area contains information about the footer (foot) */
+
+#foot {position: relative; height: 375px; width: 1000px;
+	margin-left: auto; margin-right: auto; left: 45px;
+	background: rgb(29, 29, 29); top: 200px;
+	border-top-width: 5px;
+    border-top-style: solid;
+    border-top-color: #888888;
+    border-bottom-width: 40px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(221, 221, 221, 1.0);}
+    
+#contactContainer {width: 200px; height: 200px;
+	float: left; margin-left: 30px; margin-top: 10px;}
+    
+#logo {background-image: url("../images/tmg.png");
+	height: 53px; opacity: 1.0;}
+	
+#contactInfo {color: white; font-family: arial;
+	width: 180px; margin-top: 10px; margin-left: 20px;
+	font-size: 12px;}
+	
+	
+/* Twitter area */
+
+#twitterContainer {float: left; width: 300px;
+	margin-left: 40px;
+	font-family: arial; color: white;}
+	
+#tweet {padding-top: 50px;
+   width: 300px;
+   font-size: 12px;
+   background: rgb(29, 29, 29);
+   float: left;
+   color: white;}
+
+#tweet ul {display: block;
+   list-style: none;
+   padding: 0;
+   margin:0;
+   line-height: 20px;}
+
+#tweet img {float: left;
+   margin: 0 20px 0 0;
+   width: 40px; height: 40px;
+   box-shadow: 0px 0px 2px #888888;}
+
+#tweet li {clear: both;
+   height: 110px;  margin-top: 15px;
+   position: relative;
+   padding-right: 70px;
+   border-bottom: solid 1px; border-bottom-color: white;}
+
+#tweet li:nth-last-child(1) {border: none;
+   height: 50px;}
+
+#tweet a.timestamp {background:none;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #bbb;}
+
+#tweet a.timestamp:hover {color: #000;}
+
+#tweet a.timestamp:active {color: #666;}
+
+#tweet .tweet_text {margin-left: 68px;}
+
+#tweet .tweet_text a {color: #666;
+   text-decoration: none;}
+
+#tweet .tweet_text a:hover {color: #000;
+   background: #ffff00;
+   text-decoration: none;}
+
+#tweet .tweet_text a:active {color: #fff;
+   background: #000;}
+   
+/* Facebook Area */
+
+#fbOutterContainer {width: 338px; height: 315px;
+	position: relative; top: 50px; margin-right: 42px;
+	overflow: hidden; float: right;
+	font-family: arial; color: white;}
+
+#fbContainer {overflow: hidden;}
+	
+.fb-like-box {position: relative;
+	top: -75px; left: -1px;}
+   
+
+/* Social items */
+
+#fb {background-image: url("../images/facebook.png");
+	position: absolute; top: 10px; left: 620px;
+	background-size: 111px 35px;
+	width: 111px; height: 35px;}
+	
+#tw {background-image: url("../images/twitter.png");
+	position: absolute; top: 10px; left: 270px;
+	background-size: 111px 35px;
+	width: 111px; height: 35px;
+	margin-bottom: 10px;}

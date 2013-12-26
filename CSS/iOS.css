@@ -1,0 +1,48 @@
+/* CSS Document */
+
+/* iPad */
+
+#pricingTableiPad {position: relative; top: -80px;
+	width: 900px;
+	margin-left: auto; margin-right: auto;}
+
+#tableiPad {margin-left: auto; margin-right: auto;
+	width: 900px; height: 400px;
+	font-family: arial; font-size: 14px;
+	border-collapse: collapse;}
+	
+#tableiPad td {padding: 5px; padding-left: 10px;
+	border-right-style:solid;
+	border-right:solid 1px rgba(202,202,202,0.68);}
+	
+@-moz-document url-prefix() { 
+  #pricingTableiPad {
+      top: 40px;;
+  }
+}
+	
+	
+/* iPod Touch */
+
+#pricingTableTouch {position: relative; top: -80px;
+	width: 550px; display: flex;
+	margin-left: auto; margin-right: auto;}
+	
+#tableTouch {margin-left: auto; margin-right: auto;
+	width: 550px; height: 300px;
+	font-family: arial; font-size: 14px;
+	border-collapse: collapse;}
+	
+#tableTouch td {padding: 5px; padding-left: 10px;
+	border-right-style:solid;
+	border-right:solid 1px rgba(202,202,202,0.68);}
+	
+@-moz-document url-prefix() { 
+  #pricingTableTouch {
+      top: 40px;;
+  }
+}
+	
+.prices {text-align: right; 
+	font-weight: bold;}
+

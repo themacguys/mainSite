@@ -1,0 +1,125 @@
+/* CSS Document */
+
+* {margin: 0;
+	padding: 0;}
+	
+html {background-color: #F5F5F5;}
+	
+#container {height: 1260px;}
+
+#slider {position: relative; top: 90px;
+	margin-left: auto; margin-right: auto;}
+
+#content {margin: 0 auto; opacity: 0.90;
+	width: 1000px; height: 300px;
+	z-index: 2;}
+	
+#shadow {position: absolute; left: 45px; top: 0px;
+	width: 1000px; height: 300px;
+	z-index: 1;
+	box-shadow: 0px 0px 2px #888888;}
+	
+#bannerNav {width: 900px; position: absolute; z-index: 80;
+	margin-left: auto; margin-right: auto;}
+	
+#bannerButton1 {width: 422px; height: 60px;
+	position: absolute; left: 752px; top: -380px;}
+	
+#bannerButton2 {width: 422px; height: 60px;
+	position: absolute; left: 752px; top: -320px;}
+	
+#bannerButton3 {width: 422px; height: 60px;
+	position: absolute; left: 752px; top: -260px;}
+	
+#bannerButton4 {width: 422px; height: 60px;
+	position: absolute; left: 752px; top: -200px;}
+	
+#bannerButton5 {width: 422px; height: 60px;
+	position: absolute; left: 752px; top: -140px;}
+
+#infoContainer {height: 1360px; width: 900px;
+	margin-left: auto; margin-right: auto;
+	position: relative; left: 40px; top: 100px;}
+	
+#contactContainer {width: 200px; height: 200px;
+	float: left; margin-left: 30px;
+	position: relative; top: -px;}
+	
+#registerButton {position: absolute; z-index: 40;
+	left: 500px; top: 200px;
+	background-image: url("../images/training/registerButton.png");
+	width: 150px; height: 150px; transform:rotate(7deg);
+	-webkit-transform:rotate(10deg);}
+	
+#position1 {position: absolute; top: 550px;
+	width: 40px; height: 10px;}
+	
+#row1 {position: relative; top: -100px;
+	height: 300px; width: 900px;
+	margin-bottom: 40px;}
+	
+#position2 {position: absolute; top: 225px;
+	width: 40px; height: 10px;}
+	
+#row2 {position: relative; top: -80px;
+	height: 300px; width: 900px;
+	margin-bottom: 40px;}
+	
+#position3 {position: absolute; top: 225px;
+	width: 40px; height: 10px;}
+	
+#position4 {position: absolute; top: 200px;
+	width: 40px; height: 10px;}
+	
+#row3 {position: relative; top: -60px;
+	height: 300px; width: 900px;
+	margin-bottom: 100px;}
+	
+#row4 {position: relative; top: -40px;
+	height: 300px; width: 900px;}
+
+.leftText, .rightText {width: 560px; height: 300px;
+	float: left; font-family: arial;}
+	
+.leftText h2, .rightText h2 {padding: 10px;}
+
+.leftText p, .rightText p {padding: 10px; line-height: 25px;}
+	
+.rightPicture {width: 300px; height: 300px;
+	float: right;}
+	
+.rightText {width: 560px; height: 300px;
+	float: right;}
+	
+.leftPicture {width: 300px; height: 300px;
+	float: left;}
+	
+#row1 .rightPicture {box-shadow: 0px 0px 2px #888888;}
+
+#row1 .leftPicture {box-shadow: 0px 0px 2px #888888;}
+	
+#row2 .leftPicture {box-shadow: 0px 0px 2px #888888;}
+	
+#row3 .rightPicture {box-shadow: 0px 0px 2px #888888;}
+
+#row3 .leftPicture {box-shadow: 0px 0px 2px #888888;}
+	
+#row4 .leftPicture {box-shadow: 0px 0px 2px #888888;}
+
+#help_Button {width: 186px; height: 200px;
+	background-image: url("../images/service/helpTab.png");
+	z-index: 75; position: fixed; right: -130px; top: 100px}
+	
+#foot {height: 150px; width: 1000px; clear: both;
+	position: relative; top: 150px;
+	margin-left: auto; margin-right: auto; left: 45px;
+	background: rgb(29, 29, 29);
+	border-top-width: 5px;
+    border-top-style: solid;
+    border-top-color: #888888;
+    border-bottom-width: 40px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(221, 221, 221, 1.0);
+    overflow: hidden;}
+    
+#classLink {font-weight: bold;}

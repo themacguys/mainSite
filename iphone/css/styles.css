@@ -1,0 +1,359 @@
+body {
+-webkit-text-size-adjust:none;
+-webkit-user-select:none;
+background:#000;
+color:#FFF;
+font-family:Helvetica;
+font-size:12px;
+font-weight:700;
+margin:0;
+min-width:320px;
+text-shadow:rgba(0, 0, 0, 0.6) 0 1px 0;
+}
+
+a:link,a:visited,a:hover,a:active {
+color:#FFF;
+text-decoration:none;
+}
+
+p {
+padding:0 15px;
+}
+
+#login_header {
+background:url(../images/login_header_bg.png) repeat-x;
+height:94px;
+text-align:center;
+width:100%;
+}
+
+#login_content {
+background:url(../images/login_bg.png) repeat-x;
+font-size:17px;
+height:auto:;
+padding:50px 0;
+width:100%;
+}
+
+.login_form {
+padding:0 25px;
+}
+
+.login_form .label {
+color:#fff;
+display:block;
+font-size:17px;
+font-weight:700;
+margin:2px 0;
+}
+
+.login_form textarea,.login_form input[type="password"] {
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+font-family:inherit;
+font-size:inherit;
+margin:3px 0;
+max-height:80px;
+padding:5px 3px;
+width:100%;
+}
+
+.login_btn {
+font-size:18px;
+font-weight:700;
+margin:7px 0 55px;
+padding:5px;
+width:100%;
+}
+
+#login_logo {
+float:right;
+margin:0 0 0 4px;
+}
+
+#header {
+background:url(../images/header_bg.png) repeat-x;
+height:45px;
+width:auto;
+}
+
+#header .lightspeed {
+display:block;
+float:left;
+}
+
+#header .company {
+-webkit-border-image: url(../images/company.png)  0 13 0 4;
+border-left: 4px;
+border-right: 13px;
+display:block;
+float:right;
+font-size:12px;
+margin: 6px 10px -20px;
+}
+
+.company p {
+padding: 7px 10px;
+}
+
+#nav {
+background:url(../images/nav_bg.png) repeat-x;
+height:31px;
+text-align:center;
+width:100%;
+}
+
+#nav_sales {
+display:block;
+float:left;
+text-align:center;
+width:35%;
+}
+
+#nav_intelligence {
+display:block;
+float:left;
+text-align:center;
+width:39%;
+}
+
+#nav_staff {
+display:block;
+float:left;
+text-align:center;
+width:24%;
+}
+
+#nav .active {
+background:url(../images/nav_bg_active.png) repeat-x;
+}
+
+.divider {
+display:block;
+float:left;
+width:2px;
+}
+
+#subnav {
+background:url(../images/subnav_bg.png) repeat-x;
+height:25px;
+}
+
+#subnav #spacing {
+color:#000;
+display:block;
+float:left;
+letter-spacing:0.1px;
+position:relative;
+text-align:center;
+text-shadow:rgba(255, 255, 255, 0.3) 0 1px 0;
+top:5px;
+width:33.3%;
+}
+
+#subnav #spacing_active{
+color:#fff;
+display:block;
+float:left;
+letter-spacing:0.1px;
+position:relative;
+text-align:center;
+text-shadow:rgba(255, 255, 255, 0.3) 0 1px 0;
+top:5px;
+width:33.3%;
+}
+
+#subnav #spacing .active {
+color:#FFF;
+text-shadow:rgba(0, 0, 0, 0.6) 0 1px 0;
+}
+
+#daterange {
+background:#38393a;
+border-bottom:1px solid #252525;
+border-top:1px solid #252525;
+color:#252525;
+height:21px;
+width:100%;
+}
+
+#daterange #normal {
+background:url(../images/daterange_normal.png) no-repeat center -1px;
+color:#000;
+display:block;
+float:left;
+height:19px;
+padding:3px 0 0;
+position:relative;
+text-align:center;
+text-shadow:rgba(255, 255, 255, 0.3) 0 1px 0;
+width:25%;
+}
+
+#daterange #active {
+background:url(../images/daterange_active.png) no-repeat center -1px;
+color:#FFF;
+display:block;
+float:left;
+height:19px;
+padding:3px 0 0;
+text-align:center;
+width:25%;
+}
+
+#content {
+font-size:20px;
+line-height:20px;
+margin:0 0 1px;
+padding:17px 0 25px;
+}
+
+ul#table,#content,#row {
+background:url(../images/bg.png) repeat-x;
+clear:both;
+width:100%;
+list-style:  none;
+}
+
+#row td, #row tr {
+border-bottom: 1px solid #000;
+font-size:17px;
+height:40px;
+letter-spacing:0.8px;
+padding:40px;
+vertical-align:middle;
+}
+
+#table li {
+border-bottom:1px solid #000;
+font-size:17px;
+height:36px;
+letter-spacing:0.8px;
+vertical-align:middle;
+padding: 4px 0 0 0;
+clear: both;
+background: url(../images/arrow.png) no-repeat center right;
+}
+
+#row .number {
+padding:2px 0 0 15px;
+width:10%;
+}
+
+#table .number {
+display: block;
+float: left; 
+padding:2px 8px 0 15px;
+}
+
+#row .desc {
+font-size:14px;
+height:32px;
+overflow:hidden;
+padding:5px 0 0 5px;
+white-space:nowrap;
+width:auto;
+}
+
+#table .desc {
+font-size:14px;
+height:32px;
+overflow:hidden;
+padding:7px 0 0 5px;
+white-space:nowrap;
+width:auto;
+}
+
+#row .money, #table .money {
+overflow:hidden;
+padding:2px 10px 0 0;
+text-align:right;
+white-space:nowrap;
+width:auto;
+}
+
+.code {
+display:block;
+float:right;
+margin:-20px 0 0;
+}
+
+.smalltxt {
+font-size:14px;
+}
+
+#bubble {
+font-size:17px;
+padding:15px 15px;
+text-align:left;
+width:100%;
+}
+
+#bubble tr td {
+height:41px;
+margin:4px 0 -3px;
+}
+
+#bubble .title {
+color:#252525;
+display:block;
+float:left;
+font-size:16px;
+margin: 3px 0 -3px;
+padding: 0 0 0 8px;
+text-align:left;
+text-shadow:rgba(255, 255, 255, 0.3) 0 1px 0;
+text-transform:uppercase;
+white-space:nowrap;
+}
+
+#bubble .title_right {
+color:#252525;
+float:right;
+font-size:16px;
+margin:3px 3px -3px 0;
+padding: 0 0 0 0;
+text-shadow:rgba(255, 255, 255, 0.3) 0 1px 0;
+text-transform:uppercase;
+white-space:nowrap;
+}
+
+#bubble .time {
+font-size: 12px; 
+display: block; 
+float: right; 
+padding: -3px 5px 0 0;
+}
+
+#bubble p {
+display:block;
+float:left;
+font-size:14px;
+margin: 2px 0 -4px -6px;
+white-space:nowrap;
+}
+
+#button {
+-webkit-border-image:url(../images/button.png) 5;
+border-width:5px;
+color:#000;
+font-size:14px;
+font-weight:700;s
+line-height:40px;
+padding:2px 6px;
+text-shadow:rgba(255, 255, 255, 0.3) 0 1px 0;
+white-space:nowrap;
+}
+
+#footer {
+background:url(../images/nav_bg.png) repeat-x;
+height:29px;
+width:100%;
+}
+
+#logout {
+display:block;
+float:right;
+margin:-1px 0 0 -10px;
+}

@@ -1,0 +1,158 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="description" content="The Mac Guys">
+	<meta name="author" content="SitePoint">
+  
+	<!-- <link rel="shortcut icon" href="demos/images/favicon.ico" type="image/x-icon"> -->
+	<!-- <link rel="apple-touch-icon" href="demos/images/apple-touch-icon.png"> -->
+  
+	<!-- jQuery (required) -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+  
+	<!-- Anything Slider -->
+	<link rel="stylesheet" href="CSS/anythingslider.css">
+	<script src="js/jquery.anythingslider.js"></script>
+  
+	<!-- AnythingSlider optional extensions -->
+	<!-- <script src="js/jquery.anythingslider.fx.js"></script> -->
+	<!-- <script src="js/jquery.anythingslider.video.js"></script> -->
+  
+	<!-- TMG stuff -->
+	<link rel="stylesheet" type="text/css" href="CSS/tmgGen.css">
+  
+	<title>The Mac Guys • Homepage</title>
+  
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+  
+	<!-- AnythingSlider initialization -->
+	<script type="text/javascript">
+		jQuery(function(){
+			jQuery('#content').anythingSlider({
+				mode			: "fade",
+				startStopped    : false, // If autoPlay is on, this can force it to start stopped
+				buildStartStop	: false,
+				hashTags        : false,
+				autoPlay            : true,
+				buildNavigation     : false,
+				toggleArrows    : false,
+				buildArrows     : false,
+				enablePlay      : false,      // if false, the play/stop button will still be visible, but not clickable.
+				autoPlayLocked  : true,  // If true, user changing slides will not stop the slideshow
+				resumeDelay     : 2000, // Resume slideshow after user interaction, only if autoplayLocked is true (in milliseconds).
+				easing          : "swing",   // Anything other than "linear" or "swing" requires the easing plugin
+				delay           : 4500,      // How long between slideshow transitions in AutoPlay mode (in milliseconds)
+				animationTime   : 1000,       // How long the slideshow transition takes (in milliseconds)
+				onSlideComplete : function(slider){
+					// alert('Welcome to Slide #' + slider.currentPage);
+				}
+			});
+		});
+	</script>
+
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</head>
+
+<body>
+
+	<div id="fb-root"> </div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=471077096304245";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div id="container">
+	
+		<div id="headContainer">
+		
+			<div id="signContainer">
+				<div id="sign"></div>
+			</div> <!-- The close for signContainer -->
+			
+			<div id="navBarContainer">
+				<div id="navBar">
+					<div id="centerNavbar">
+						<a href="/index.html" title="Homepage"> <span class="TheMacGuys"> </span> </a> <!-- close for TheMacGuys -->
+						<a href="/findUS.html" title="Find Us"> <span class="findUs"> </span> </a>  <!-- close for findUs -->
+						<a href="/products.html" title="Products"> <span class="products"> </span> </a> <!-- close for products -->
+						<a href="/service.html" title="Services"> <span class="service"> </span> </a> <!-- close for service -->
+					  	<a href="/training.html" title="Training"> <span class="training"> </span> </a> <!-- close for training -->
+					  	<a href="/tradeUp.html" title="Trade Up"> <span class="tradeUp"> </span> </a> <!-- close for tradeUp -->
+					  	<a href="/help2.html" title="Need Help?"> <span class="help"> </span> </a> <!-- close for help -->
+					</div> <!-- The close for centerNavBar -->
+				</div> <!-- The close for navBar -->
+			</div> <!-- The close for navBarContainer -->
+			
+		</div> <!-- The close for headContainer -->
+    
+		<div id="slider">
+		
+			<ul id="content">
+
+				<li><img src="images/promos/promo1.jpg" alt=""></li>
+				<li><img src="images/storePics/IMG_1252.jpg" alt=""></li>
+				<li><img src="images/promos/promo3.jpg" alt=""></li>
+				<li><img src="images/storePics/IMG_1255.jpg" alt=""></li>
+				<li><img src="images/promos/promo5.jpg" alt=""></li>
+				<li><img src="images/promos/promo6.jpg" alt=""></li>
+				
+			</ul> <!-- The close for content -->
+
+		</div> <!-- The close for slider -->
+		
+		<div id="buttonRow">
+			<a href="/service.html" title="One-Stop Expert Service"> <div id="button1"> </div> </a>
+			<a href="/tradeUp.html" title="How about a Trade-Up?"> <div id="button2"> </div> </a>
+			<a href="/help2.html" title="Need Help?"> <div id="button3"> </div> </a>
+			<a href="/training.html" title="Interested in some training?"> <div id="button4"> </div> </a>
+		</div> <!-- The close for buttonRow1 -->
+		
+		<div id="whoAreWe">
+			<p>The Coulee Region's Apple Experts</p>
+		
+		</div> <!-- The close for whoAreWe -->
+		
+		<div id="foot">
+		
+			<div id="contactContainer">
+				<div id="logo"></div>
+				<div id="contactInfo">
+					<p>(608) 782-1565</p>
+					<p>40 Copeland Avenue</p>
+					<p>Suite 111</p>
+					<p>La Crosse, WI 54603</p>
+				</div>
+			</div> <!-- The close for contactContainer -->
+			
+			<a href="http://twitter.com/TheMacGuysLaX" title="Follow Us On Twitter"><div id="tw"></div></a>
+			
+			<div id="twitterContainer">
+				<div id="tweet"></div>
+				<a class="twitter-timeline" data-chrome="nofooter noheader transparent" height="310" data-dnt="true" href="https://twitter.com/TheMacGuysLaX" data-widget-id="348129315755532288">Tweets by @TheMacGuysLaX</a>
+			</div> <!-- The close for twitterContainer -->
+			
+			<a href="https://www.facebook.com/macguys" title="Follow Us On Facebook"><div id="fb"></div></a>
+			
+			<div id="fbOutterContainer">
+				<div id="fbContainer">
+					<div class="fb-like-box" data-href="https://www.facebook.com/macguys" data-width="360" data-height="420" data-show-faces="false" data-colorscheme="dark" data-stream="true" data-header="false"></div>
+				</div> <!-- The close for fbContainer -->
+			</div> <!-- The close for fbOutterContainer -->
+	
+		</div> <!-- The close for the foot -->
+		  
+	</div> <!-- The close for container -->
+
+</body>
+
+</html>

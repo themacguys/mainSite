@@ -1,0 +1,20 @@
+/* CSS Document */
+
+#container {height: 905px;}
+
+#mapContainer {position: relative; margin-left: auto; margin-right: auto;
+	width: 900px; height: 610px; top: 75px; left: 45px;
+	box-shadow: 0px 0px 2px #888888; background-color: white;}
+	
+#info {float: left; width: 280px; height: 204px;
+	margin: 43px; font-family: arial;}
+	
+#map {float: right;}
+	
+#ThreeRivers {height: 320px; width: 364px;
+	background-image: url("../images/3RiversPlaza.png"); float: left;
+	position: relative;}
+	
+#foot {top: 100px; height: 150px;}
+
+#contactContainer {height: 100px;}

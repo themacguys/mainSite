@@ -1,0 +1,189 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="description" content="The Mac Guys">
+	<meta name="author" content="SitePoint">
+  
+	<!-- <link rel="shortcut icon" href="demos/images/favicon.ico" type="image/x-icon"> -->
+	<!-- <link rel="apple-touch-icon" href="demos/images/apple-touch-icon.png"> -->
+
+	<!-- jQuery (required) -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+  
+	<!-- Anything Slider -->
+	<link rel="stylesheet" href="CSS/anythingslider.css">
+	<script src="js/jquery.anythingslider.js"></script>
+  
+	<!-- AnythingSlider optional extensions -->
+	<!-- <script src="js/jquery.anythingslider.fx.js"></script> -->
+	<!-- <script src="js/jquery.anythingslider.video.js"></script> -->
+  
+	<!-- TMG stuff -->
+	<link rel="stylesheet" type="text/css" href="CSS/tmgGen.css" />
+	<link rel="stylesheet" type="text/css" href="CSS/service-training.css" />
+  
+  <title>Services</title>
+  
+  <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+  
+	<!-- AnythingSlider initialization -->
+	<script type="text/javascript">
+		jQuery(function(){
+			jQuery('#content').anythingSlider({
+				mode			: "fade",
+				startStopped    : false, // If autoPlay is on, this can force it to start stopped
+				buildStartStop	: false,
+				hashTags        : false,
+				autoPlay            : true,
+				buildNavigation     : false,
+				toggleArrows    : false,
+				buildArrows     : false,
+				enablePlay      : false,      // if false, the play/stop button will still be visible, but not clickable.
+				autoPlayLocked  : true,  // If true, user changing slides will not stop the slideshow
+				resumeDelay     : 4000, // Resume slideshow after user interaction, only if autoplayLocked is true (in milliseconds).
+				easing          : "swing",   // Anything other than "linear" or "swing" requires the easing plugin
+				delay           : 4500,      // How long between slideshow transitions in AutoPlay mode (in milliseconds)
+				animationTime   : 1000,       // How long the slideshow transition takes (in milliseconds)
+				onSlideComplete : function(slider){
+					// alert('Welcome to Slide #' + slider.currentPage);
+				}
+			});
+			$('#bannerNav a').mouseover(function(){
+				var slide = $(this).attr('data-slide').substring(1);
+				$('#content').anythingSlider(slide);
+				return false;
+			});
+		});
+	</script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var baseMargin = 0;
+	
+			$('#help_Button').hover(function() {
+				$(this).stop().animate({right: (baseMargin+0)+'px'}, 500);
+			},
+			function() {
+				$(this).stop().animate({right: (baseMargin-130)+'px'}, 500);                 
+			});
+		});
+	</script>
+  
+</head>
+
+<body>
+
+	<div id="container">
+	
+		<div id="headContainer">
+		
+			<div id="signContainer">
+				<div id="sign"></div>
+			</div> <!-- The close for signContainer -->
+			
+			<div id="navBarContainer">
+				<div id="navBar">
+					<div id="centerNavbar">
+						<a href="/index.html" title="Homepage"> <span class="TheMacGuys"> </span> </a> <!-- close for TheMacGuys -->
+						<a href="/findUS.html" title="Find Us"> <span class="findUs"> </span> </a>  <!-- close for findUs -->
+						<a href="/products.html" title="Products"> <span class="products"> </span> </a> <!-- close for products -->
+						<a href="/service.html" title="Services"> <span class="service"> </span> </a> <!-- close for service -->
+					  	<a href="/training.html" title="Training"> <span class="training"> </span> </a> <!-- close for training -->
+					  	<a href="/tradeUp.html" title="Trade Up"> <span class="tradeUp"> </span> </a> <!-- close for tradeUp -->
+					  	<a href="/help2.html" title="Need Help?"> <span class="help"> </span> </a> <!-- close for help -->
+					</div> <!-- The close for centerNavBar -->
+				</div> <!-- The close for navBar -->
+			</div> <!-- The close for navBarContainer -->
+			
+		</div> <!-- The close for headContainer -->
+		
+		<div id="midContainer">
+			
+			<div id="slider">
+				<ul id="content">
+					<li> <img src="/images/service/support.jpg" alt="The Coulee Region's Apple Expert"> </li>
+					<li> <img src="/images/service/repairs.jpg" alt="Repairs You Can Count On"> </li>
+					<li> <img src="/images/service/onsites.jpg" alt="We'll Come to See You"> </li>
+					<li> <img src="/images/service/setups.jpg" alt="Do you really want to carry it yourself?"> </li>
+					<li> <img src="/images/service/remote.jpg" alt="We Might be able to Help you From Here"> </li>
+				</ul>
+				<div id="shadow">
+				</div>
+			</div>
+			
+			<div id="bannerNav">
+				<a id="#1" data-slide="#1" href="#1"> <div id="bannerButton1"></div> </a>
+				<a id="#2" data-slide="#2" href="#bannerButton5"> <div id="bannerButton2"></div> </a>
+				<a id="#3" data-slide="#3" href="#position2"> <div id="bannerButton3"></div> </a>
+				<a id="#4" data-slide="#4" href="#position3"> <div id="bannerButton4"></div> </a>
+				<a id="#5" data-slide="#5" href="#row4"> <div id="bannerButton5"></div> </a>
+			</div>
+			
+			<div id="infoContainer">
+				<div id="row1">
+					<div id="position1"></div>
+					<div class="leftText">
+						<h2>Apple Certified Repairs</h2>
+						<p>Is your Apple device not working like it should? Or maybe you’d just like a check-up.</p>
+						<p>Whether your Apple product is in or out of warranty, we have the techs and the tools to get your problem fixed right.</p>
+						<p>The Mac Guys has been Apple’s premiere Service Provider in this area since the 1980‘s. Our staff of expert technicians will have you back up and running again in no time.</p>
+					</div>
+					<div class="rightPicture"> <img src="/images/service/repair.jpg" alt="Big Boat"> </div>
+					<div id="position2"></div>
+				</div>
+				<div id="row2">
+					<div class="rightText">
+						<h2>Onsite Support</h2>
+						<p>Sometimes you just need an expert to come and help you in person. Whether you have a single computer or a whole bunch of Macs and iPads, The Mac Guys will happily come to you! <br><br> We come out to your location, fix your issue quickly and get things working properly - and you don’t have to unplug your equipment and haul it to our shop. Maximum help. Minimum hassle!</p>
+					</div>
+					<div class="leftPicture"> <img src="/images/service/onsite.jpg" alt="Big Boat"> </div>
+					<div id="position3"></div>
+				</div>
+				<div id="row3">
+					<div class="leftText">
+						<h2>Equipment Setup</h2>
+						<p>Some people enjoy installing a new computer. Some people relish the idea of spending half their day figuring out how to setup their stuff, transfer all their data and configure all their accounts. But maybe you’re not one of those people. <br><br> Maybe you’re one of those people who would love to have an Apple Expert do all that FOR you so that the first time you sit down at your new computer is to USE IT! At The Mac Guys we love setting up our customer’s Macs for them. We deliver your new Mac right to your door, get it all set up the way you want it, and give you a tutorial before we leave. <br><br> Now isn’t THAT a better way to spend your afternoon?</p>
+					</div>
+					<div class="rightPicture"> <img src="/images/service/setup.jpg" alt="Big Boat"> </div>
+					<div id="position4"></div>
+				</div>
+				<div id="row4">
+					<div class="rightText">
+						<h2>Remote Support</h2>
+						<p>Would you like help with your Mac right from your home or office? With just a few clicks on your end The Mac Guys can connect to your Mac and help you figure out whatever issue you’re having. <br><br> Remote Support is simple and secure, and your issue gets resolved much more quickly than if you had to bring your Mac in to our store.</p>
+					</div>
+					<div class="leftPicture"> <img src="/images/service/iOS.jpg" alt="Big Boat"> </div>
+				</div>
+				
+			</div> <!-- The close for serviceInfoContainer -->
+			
+		</div> <!-- The close for midContainer -->
+		
+		<div id="buttonArea">
+			<a href="help2.html" title="Click for Help"> <div id="help_Button"></div> </a>
+		</div>
+		
+		<div id="foot">
+		
+			<div id="contactContainer">
+				<div id="logo"></div>
+				<div id="contactInfo">
+					<p>40 Copeland Avenue</p>
+					<p>Suite 111</p>
+					<p>La Crosse, WI 54603</p>
+				</div>
+			</div> <!-- The close for contactContainer -->
+	
+		</div> <!-- The close for the foot -->
+		  
+	</div> <!-- The close for container -->
+  
+</body>
+
+</html>

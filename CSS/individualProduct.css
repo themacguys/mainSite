@@ -1,0 +1,60 @@
+/* CSS Document */
+
+* {margin: 0;
+	padding: 0;}
+	
+html {background-color: #F5F5F5;}
+	
+#container {height: 800px;}
+
+#productContainer {position: relative; width: 900px; height: 600px;
+	margin-left: auto; margin-right: auto;
+	left: 45px; top: 100px;}
+	
+.productTitle {font-family: arial; color: gray;
+	margin-bottom: 10px;}
+
+#productBanner {width: 900px; height: 200px;
+	box-shadow: 0px 0px 2px #888888;
+	background-color: white;}
+	
+#product {position: relative; width: 600px; height: 328px; top: -80px;
+	float: right; background-repeat: no-repeat; margin-right: 50px;}
+	
+#table {position: relative; top: -80px;
+	width: 900px; height: 300px;
+	font-family: arial; font-size: 14px;
+	border-collapse: collapse;}
+	
+@-moz-document url-prefix() { 
+	#table {
+		display: inline-table;
+	}
+}
+
+#table td{padding: 5px; padding-left: 10px;
+	border-right-style:solid;
+	border-right:solid 1px rgba(202,202,202,0.68);}
+
+#label {text-align: center;
+	font-size: 18px; font-weight: bold;}
+	
+.connectivity {font-size: 16px; font-weight: bold;}
+	
+#prices {text-align: right; font-size: 16px;
+	font-weight: bold;}
+	
+#app {text-align: right; font-size: 16px;
+	font-weight: bold; color: red;}
+
+#foot {height: 150px; width: 1000px;
+	margin-left: auto; margin-right: auto; left: 45px;
+	background: rgb(29, 29, 29);
+	border-top-width: 5px;
+    border-top-style: solid;
+    border-top-color: #888888;
+    border-bottom-width: 40px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(221, 221, 221, 1.0);}
+    
+#contactContainer {height: 150px;}

@@ -1,0 +1,117 @@
+/* CSS Document */
+
+* {margin: 0;
+	padding: 0;}
+	
+html {font-family: arial;}
+
+#helpRequest {position: absolute; top: 700px;
+	width: 900px; height: 340px; float: left;
+	margin-left: auto; margin-right: auto;}
+	
+#leftSide {width: 450px; float: left;
+	position: relative; top: -325px;}
+
+#rightSide {width: 450px; float: right;
+	position: relative; top: -325px;}
+	
+.visibleIf-disableIfInvisible {width: 450px;
+	margin-top: 10px;}
+	
+.visibleIf-disableIfInvisible p {padding-left: 20px;
+	padding-bottom: 10px;}
+	
+#question {font-weight: bold;}
+	
+#inquiryType {margin-left: 20px;
+	margin-bottom: 10px;}
+	
+.visibleIf p {width: 400px; font-size: 14px;
+	color: #A71F23;}
+	
+.visibleIf th {}
+
+#formHeader {width: 300px; font-weight: bold;
+	padding-bottom: 10px; padding-top: 10px;}
+	
+#helpForm {width: 450px; height: 275px;
+	position: relative;
+	float: right;}
+	
+#helpForm input {height: 20px;
+    width: 220px;
+    padding: 5px 8px;}
+    
+#helpForm textarea {padding:8px; width:300px;}
+
+#helpForm button {margin-left:156px;}
+
+#helpForm input, #helpForm textarea {
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
+    -moz-transition: padding .25s;
+    -webkit-transition: padding .25s;
+    -o-transition: padding .25s;
+    transition: padding .25s;
+}
+
+#helpForm input:focus, #helpForm textarea:focus {
+    background: #fff;
+    border:1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+    padding-right:70px;
+}
+
+/* Button Style */
+button.submit {
+    background-color: #68b12f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+    background: -webkit-linear-gradient(top, #68b12f, #50911e);
+    background: -moz-linear-gradient(top, #68b12f, #50911e);
+    background: -ms-linear-gradient(top, #68b12f, #50911e);
+    background: -o-linear-gradient(top, #68b12f, #50911e);
+    background: linear-gradient(top, #68b12f, #50911e);
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+
+button.submit:hover {
+    opacity:.85;
+    cursor: pointer;
+}
+
+button.submit:active {
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset;
+    -webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+    -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+    -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+    -o-box-shadow: 0 0 10px 5px #356b0b inset;
+}
+
+#helpForm input:focus:invalid, #helpForm textarea:focus:invalid { /* when a field is considered invalid by the browser */
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+
+#helpForm input:required:valid, #helpForm textarea:required:valid { /* when a field is considered valid by the browser */
+    background: #fff url(images/valid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}

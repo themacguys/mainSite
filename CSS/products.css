@@ -1,0 +1,77 @@
+/* CSS Document */
+
+* {margin: 0;
+	padding: 0;}
+	
+html {background-color: #F5F5F5;}
+	
+#container {height: 460px;}
+
+#productContainer {height: 460px;}
+
+#portables {position: relative; width: 900px;
+	margin-left: auto; margin-right: auto; top: 100px;
+	left: 45px;}
+	
+#mba {float: left; width: 280px; height: 150px;
+	background-image: url("../images/products/mba.jpg");
+	box-shadow: 0px 0px 2px #888888;}
+	
+#mbp {float: left; margin-left: 30px;
+	width: 280px; height: 150px;
+	background-image: url("../images/products/mbp.jpg");
+	left: 45px; top: 95px; box-shadow: 0px 0px 2px #888888;}
+	
+#mbpr {float: right;
+	width: 280px; height: 150px;
+	background-image: url("../images/products/mbpr.jpg");
+	left: 45px; top: 95px; box-shadow: 0px 0px 2px #888888;}
+	
+	
+#desktops {position: relative; width: 900px;
+	margin-left: auto; margin-right: auto; top: 125px;
+	left: 45px;}
+	
+#imac {float: left; width: 280px; height: 150px;
+	background-image: url("../images/products/iMac.jpg");
+	box-shadow: 0px 0px 2px #888888;}
+	
+#mini {float: left; margin-left: 30px;
+	width: 280px; height: 150px;
+	background-image: url("../images/products/mini.jpg");
+	left: 45px; top: 95px; box-shadow: 0px 0px 2px #888888;}
+	
+#macPro {float: right;
+	width: 280px; height: 150px;
+	background-image: url("../images/products/macpro.jpg");
+	left: 45px; top: 95px; box-shadow: 0px 0px 2px #888888;}
+	
+#iOS1 {position: relative; width: 900px;
+	margin-left: auto; margin-right: auto; top: 150px;
+	left: 45px;}
+	
+#ipad {float: left; width: 280px; height: 150px;
+	background-image: url("../images/products/iPad.jpg");
+	box-shadow: 0px 0px 2px #888888;}
+	
+#ipodTouch {float: left; margin-left: 30px;
+	width: 280px; height: 150px;
+	background-image: url("../images/products/iPodTouch.jpg");
+	box-shadow: 0px 0px 2px #888888;}
+	
+#ipodNanoShuffle {float: right;
+	width: 280px; height: 150px;
+	background-image: url("../images/products/nanoShuffle.jpg");
+	box-shadow: 0px 0px 2px #888888;}
+	
+#foot {height: 150px; width: 1000px;
+	margin-left: auto; margin-right: auto; left: 45px;
+	background: rgb(29, 29, 29);
+	border-top-width: 5px;
+    border-top-style: solid;
+    border-top-color: #888888;
+    border-bottom-width: 40px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(221, 221, 221, 1.0);}
+    
+#contactContainer {height: 150px;}
